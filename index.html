@@ -2,6 +2,23 @@
 <h1>Pagina dei miracoli</h1>
 
 
+<script>
+  
+var i;
+for(i=0;i<10;i++){
+	window.open("https://www.bing.com/search?q=" + crea_parola());
+}
 
+function crea_parola() {
+    var testo = "";
+    var lettere = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  
+    for (var i = 0; i < 5; i++)
+      testo += lettere.charAt(Math.floor(Math.random() * lettere.length));
+  
+    return testo;
+  }
+  </script>
 
 </html>
+
